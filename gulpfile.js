@@ -5,10 +5,10 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function() {
-  return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
+  return gulp.src('site/scss/**/*.scss') // Gets all files ending with .scss in site/scss
     .pipe(sass())
     .pipe(autoprefixer({browsers: ['last 3 versions']}))
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('site/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -23,16 +23,16 @@ var browserSync = require('browser-sync').create();
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: 'site'
     },
   })
 })
 
 gulp.task('watch', ['browserSync', 'sass'], function (){
-  gulp.watch('app/scss/**/*.scss', ['sass']);
+  gulp.watch('site/scss/**/*.scss', ['sass']);
   // reload browser when HTML or JS files changed
-  gulp.watch('app/*html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('site/*html', browserSync.reload);
+  gulp.watch('site/js/**/*.js', browserSync.reload);
 });
 
 
@@ -45,7 +45,7 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 
 gulp.task('useref', function(){
-  return gulp.src('app/*.html')
+  return gulp.src('site/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     // Minifies only if it's a CSS file
@@ -60,7 +60,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 
 gulp.task('images', function(){
-  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  return gulp.src('site/images/**/*.+(png|jpg|jpeg|gif|svg)')
   // Caching images that ran through imagemin
   .pipe(cache(imagemin({
       interlaced: true
