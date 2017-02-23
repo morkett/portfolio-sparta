@@ -1,6 +1,5 @@
-@import "resets";
-@import "config";
-@import "mixins";
+@import "MDL-src/material-design-lite.scss";
+
 
 html, body {
   margin: 0;
@@ -90,5 +89,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceff1', end
 .btn-portfolio .fab .mdl-button--colored:hover {
   transform: rotate(0);
 }
-
-@import "js";

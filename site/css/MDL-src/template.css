@@ -30,6 +30,37 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* Material Design Lite */
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 /*------------------------------------*    $CONTENTS
 \*------------------------------------*/
 /**
@@ -898,7 +929,7 @@ p {
   margin-bottom: 16px; }
 
 a {
-  color: rgb(255,64,129);
+  color: rgb($color-accent);
   font-weight: 500; }
 
 blockquote {
@@ -3031,34 +3062,34 @@ ul, ol {
   color: rgb(255,255,255) !important; }
 
 .mdl-color--primary {
-  background-color: rgb(63,81,181) !important; }
+  background-color: rgb($color-primary) !important; }
 
 .mdl-color--primary-contrast {
-  background-color: rgb(255,255,255) !important; }
+  background-color: rgb($color-primary-contrast) !important; }
 
 .mdl-color--primary-dark {
-  background-color: rgb(48,63,159) !important; }
+  background-color: rgb($color-primary-dark) !important; }
 
 .mdl-color--accent {
-  background-color: rgb(255,64,129) !important; }
+  background-color: rgb($color-accent) !important; }
 
 .mdl-color--accent-contrast {
-  background-color: rgb(255,255,255) !important; }
+  background-color: rgb($color-accent-contrast) !important; }
 
 .mdl-color-text--primary {
-  color: rgb(63,81,181) !important; }
+  color: rgb($color-primary) !important; }
 
 .mdl-color-text--primary-contrast {
-  color: rgb(255,255,255) !important; }
+  color: rgb($color-primary-contrast) !important; }
 
 .mdl-color-text--primary-dark {
-  color: rgb(48,63,159) !important; }
+  color: rgb($color-primary-dark) !important; }
 
 .mdl-color-text--accent {
-  color: rgb(255,64,129) !important; }
+  color: rgb($color-accent) !important; }
 
 .mdl-color-text--accent-contrast {
-  color: rgb(255,255,255) !important; }
+  color: rgb($color-accent-contrast) !important; }
 
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -3623,14 +3654,14 @@ ul, ol {
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background: rgb(255,64,129);
-    color: rgb(255,255,255); }
+    background: rgb($color-accent);
+    color: rgb($color-accent-contrast); }
     .mdl-button .mdl-badge[data-badge]:after {
       top: -10px;
       right: -5px; }
   .mdl-badge.mdl-badge--no-background[data-badge]:after {
-    color: rgb(255,64,129);
-    background: rgba(255,255,255,0.2);
+    color: rgb($color-accent);
+    background: rgba($color-accent-contrast,0.2);
     box-shadow: 0 0 1px gray; }
   .mdl-badge.mdl-badge--overlap {
     margin-right: 10px; }
@@ -3859,7 +3890,7 @@ ul, ol {
   .mdl-button:active {
     background-color: rgba(158,158,158, 0.40); }
   .mdl-button.mdl-button--colored {
-    color: rgb(63,81,181); }
+    color: rgb($color-primary); }
     .mdl-button.mdl-button--colored:focus:not(:active) {
       background-color: rgba(0,0,0, 0.12); }
 
@@ -3876,16 +3907,16 @@ input.mdl-button[type="submit"] {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
     background-color: rgba(158,158,158, 0.40); }
   .mdl-button--raised.mdl-button--colored {
-    background: rgb(63,81,181);
-    color: rgb(255,255,255); }
+    background: rgb($color-primary);
+    color: rgb($color-primary-contrast); }
     .mdl-button--raised.mdl-button--colored:hover {
-      background-color: rgb(63,81,181); }
+      background-color: rgb($color-primary); }
     .mdl-button--raised.mdl-button--colored:active {
-      background-color: rgb(63,81,181); }
+      background-color: rgb($color-primary); }
     .mdl-button--raised.mdl-button--colored:focus:not(:active) {
-      background-color: rgb(63,81,181); }
+      background-color: rgb($color-primary); }
     .mdl-button--raised.mdl-button--colored .mdl-ripple {
-      background: rgb(255,255,255); }
+      background: rgb($color-primary-contrast); }
 
 .mdl-button--fab {
   border-radius: 50%;
@@ -3922,16 +3953,16 @@ input.mdl-button[type="submit"] {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
     background-color: rgba(158,158,158, 0.40); }
   .mdl-button--fab.mdl-button--colored {
-    background: rgb(255,64,129);
-    color: rgb(255,255,255); }
+    background: rgb($color-accent);
+    color: rgb($color-accent-contrast); }
     .mdl-button--fab.mdl-button--colored:hover {
-      background-color: rgb(255,64,129); }
+      background-color: rgb($color-accent); }
     .mdl-button--fab.mdl-button--colored:focus:not(:active) {
-      background-color: rgb(255,64,129); }
+      background-color: rgb($color-accent); }
     .mdl-button--fab.mdl-button--colored:active {
-      background-color: rgb(255,64,129); }
+      background-color: rgb($color-accent); }
     .mdl-button--fab.mdl-button--colored .mdl-ripple {
-      background: rgb(255,255,255); }
+      background: rgb($color-accent-contrast); }
 
 .mdl-button--icon {
   border-radius: 50%;
@@ -3978,20 +4009,20 @@ input.mdl-button[type="submit"] {
     background-color: transparent; }
 
 .mdl-button--primary.mdl-button--primary {
-  color: rgb(63,81,181); }
+  color: rgb($color-primary); }
   .mdl-button--primary.mdl-button--primary .mdl-ripple {
-    background: rgb(255,255,255); }
+    background: rgb($color-primary-contrast); }
   .mdl-button--primary.mdl-button--primary.mdl-button--raised, .mdl-button--primary.mdl-button--primary.mdl-button--fab {
-    color: rgb(255,255,255);
-    background-color: rgb(63,81,181); }
+    color: rgb($color-primary-contrast);
+    background-color: rgb($color-primary); }
 
 .mdl-button--accent.mdl-button--accent {
-  color: rgb(255,64,129); }
+  color: rgb($color-accent); }
   .mdl-button--accent.mdl-button--accent .mdl-ripple {
-    background: rgb(255,255,255); }
+    background: rgb($color-accent-contrast); }
   .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
-    color: rgb(255,255,255);
-    background-color: rgb(255,64,129); }
+    color: rgb($color-accent-contrast);
+    background-color: rgb($color-accent); }
 
 .mdl-button[disabled][disabled], .mdl-button.mdl-button--disabled.mdl-button--disabled {
   color: rgba(0,0,0, 0.26);
@@ -4198,7 +4229,7 @@ input.mdl-button[type="submit"] {
   box-sizing: border-box; }
 
 .mdl-card__media {
-  background-color: rgb(255,64,129);
+  background-color: rgb($color-accent);
   background-repeat: repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -4503,7 +4534,7 @@ input.mdl-button[type="submit"] {
   border-radius: 2px;
   z-index: 2; }
   .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
-    border: 2px solid rgb(63,81,181); }
+    border: 2px solid rgb($color-primary); }
   fieldset[disabled] .mdl-checkbox .mdl-checkbox__box-outline,
   .mdl-checkbox.is-disabled .mdl-checkbox__box-outline {
     border: 2px solid rgba(0,0,0, 0.26);
@@ -4523,8 +4554,8 @@ input.mdl-button[type="submit"] {
     box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.1); }
   .mdl-checkbox.is-focused.is-checked .mdl-checkbox__focus-helper {
-    box-shadow: 0 0 0px 8px rgba(63,81,181, 0.26);
-    background-color: rgba(63,81,181, 0.26); }
+    box-shadow: 0 0 0px 8px rgba($color-primary, 0.26);
+    background-color: rgba($color-primary, 0.26); }
 
 .mdl-checkbox__tick-outline {
   position: absolute;
@@ -4539,7 +4570,7 @@ input.mdl-button[type="submit"] {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background; }
   .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
-    background: rgb(63,81,181) url("/images/tick.svg?embed"); }
+    background: rgb($color-primary) url("/images/tick.svg?embed"); }
   fieldset[disabled] .mdl-checkbox.is-checked .mdl-checkbox__tick-outline,
   .mdl-checkbox.is-checked.is-disabled .mdl-checkbox__tick-outline {
     background: rgba(0,0,0, 0.26) url("/images/tick.svg?embed"); }
@@ -4568,7 +4599,7 @@ input.mdl-button[type="submit"] {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
   .mdl-checkbox__ripple-container .mdl-ripple {
-    background: rgb(63,81,181); }
+    background: rgb($color-primary); }
   fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container,
   .mdl-checkbox.is-disabled .mdl-checkbox__ripple-container {
     cursor: auto; }
@@ -6164,7 +6195,7 @@ input.mdl-button[type="submit"] {
     line-height: 32px;
     font-size: 24px; }
   .mdl-icon-toggle.is-checked .mdl-icon-toggle__label {
-    color: rgb(63,81,181); }
+    color: rgb($color-primary); }
   .mdl-icon-toggle.is-disabled .mdl-icon-toggle__label {
     color: rgba(0,0,0, 0.26);
     cursor: auto;
@@ -6172,7 +6203,7 @@ input.mdl-button[type="submit"] {
   .mdl-icon-toggle.is-focused .mdl-icon-toggle__label {
     background-color: rgba(0,0,0, 0.12); }
   .mdl-icon-toggle.is-focused.is-checked .mdl-icon-toggle__label {
-    background-color: rgba(63,81,181, 0.26); }
+    background-color: rgba($color-primary, 0.26); }
 
 .mdl-icon-toggle__ripple-container {
   position: absolute;
@@ -7017,12 +7048,12 @@ input.mdl-button[type="submit"] {
   transition: width 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
 
 .mdl-progress > .progressbar {
-  background-color: rgb(63,81,181);
+  background-color: rgb($color-primary);
   z-index: 1;
   left: 0; }
 
 .mdl-progress > .bufferbar {
-  background-image: linear-gradient(to right, rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)), linear-gradient(to right, rgb(63,81,181), rgb(63,81,181));
+  background-image: linear-gradient(to right, rgba($color-primary-contrast, 0.7), rgba($color-primary-contrast, 0.7)), linear-gradient(to right, rgb($color-primary), rgb($color-primary));
   z-index: 0;
   left: 0; }
 
@@ -7032,17 +7063,17 @@ input.mdl-button[type="submit"] {
 @supports (-webkit-appearance: none) {
   .mdl-progress:not(.mdl-progress--indeterminate):not(.mdl-progress--indeterminate) > .auxbar,
   .mdl-progress:not(.mdl-progress__indeterminate):not(.mdl-progress__indeterminate) > .auxbar {
-    background-image: linear-gradient(to right, rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)), linear-gradient(to right, rgb(63,81,181), rgb(63,81,181));
+    background-image: linear-gradient(to right, rgba($color-primary-contrast, 0.7), rgba($color-primary-contrast, 0.7)), linear-gradient(to right, rgb($color-primary), rgb($color-primary));
     -webkit-mask: url("/images/buffer.svg?embed");
             mask: url("/images/buffer.svg?embed"); } }
 
 .mdl-progress:not(.mdl-progress--indeterminate) > .auxbar,
 .mdl-progress:not(.mdl-progress__indeterminate) > .auxbar {
-  background-image: linear-gradient(to right, rgba(255,255,255, 0.9), rgba(255,255,255, 0.9)), linear-gradient(to right, rgb(63,81,181), rgb(63,81,181)); }
+  background-image: linear-gradient(to right, rgba($color-primary-contrast, 0.9), rgba($color-primary-contrast, 0.9)), linear-gradient(to right, rgb($color-primary), rgb($color-primary)); }
 
 .mdl-progress.mdl-progress--indeterminate > .bar1,
 .mdl-progress.mdl-progress__indeterminate > .bar1 {
-  background-color: rgb(63,81,181);
+  background-color: rgb($color-primary);
   animation-name: indeterminate1;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -7051,7 +7082,7 @@ input.mdl-button[type="submit"] {
 .mdl-progress.mdl-progress--indeterminate > .bar3,
 .mdl-progress.mdl-progress__indeterminate > .bar3 {
   background-image: none;
-  background-color: rgb(63,81,181);
+  background-color: rgb($color-primary);
   animation-name: indeterminate2;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -7415,11 +7446,11 @@ input.mdl-button[type="submit"] {
   margin: 8px 12px;
   top: 0;
   left: 0;
-  color: rgb(255,255,255);
+  color: rgb($color-primary-contrast);
   z-index: 4; }
   .mdl-layout__header .mdl-layout__drawer-button {
     position: absolute;
-    color: rgb(255,255,255);
+    color: rgb($color-primary-contrast);
     background-color: inherit; }
     @media screen and (max-width: 1024px) {
       .mdl-layout__header .mdl-layout__drawer-button {
@@ -7455,8 +7486,8 @@ input.mdl-button[type="submit"] {
   min-height: 64px;
   max-height: 1000px;
   z-index: 3;
-  background-color: rgb(63,81,181);
-  color: rgb(255,255,255);
+  background-color: rgb($color-primary);
+  color: rgb($color-primary-contrast);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -7567,7 +7598,7 @@ input.mdl-button[type="submit"] {
         height: 56px; } }
   .mdl-layout__header-row .mdl-navigation__link {
     display: block;
-    color: rgb(255,255,255);
+    color: rgb($color-primary-contrast);
     line-height: 64px;
     padding: 0 24px; }
     @media screen and (max-width: 1024px) {
@@ -7629,7 +7660,7 @@ input.mdl-button[type="submit"] {
   padding: 0 0 0 56px;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgb(63,81,181);
+  background-color: rgb($color-primary);
   overflow-y: hidden;
   overflow-x: scroll; }
   .mdl-layout__tab-bar::-webkit-scrollbar {
@@ -7678,7 +7709,7 @@ input.mdl-button[type="submit"] {
   width: 56px;
   z-index: 4;
   text-align: center;
-  background-color: rgb(63,81,181);
+  background-color: rgb($color-primary);
   color: transparent;
   cursor: pointer;
   -webkit-user-select: none;
@@ -7700,7 +7731,7 @@ input.mdl-button[type="submit"] {
   .mdl-layout__tab-bar-button .material-icons {
     line-height: 48px; }
   .mdl-layout__tab-bar-button.is-active {
-    color: rgb(255,255,255); }
+    color: rgb($color-primary-contrast); }
 
 .mdl-layout__tab-bar-left-button {
   left: 0; }
@@ -7726,7 +7757,7 @@ input.mdl-button[type="submit"] {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: rgba(255,255,255, 0.6);
+  color: rgba($color-primary-contrast, 0.6);
   overflow: hidden; }
   @media screen and (max-width: 1024px) {
     .mdl-layout__tab {
@@ -7737,7 +7768,7 @@ input.mdl-button[type="submit"] {
         flex-grow: 1;
     padding: 0; }
   .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
-    color: rgb(255,255,255); }
+    color: rgb($color-primary-contrast); }
   .mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
     height: 2px;
     width: 100%;
@@ -7746,7 +7777,7 @@ input.mdl-button[type="submit"] {
     bottom: 0;
     left: 0;
     position: absolute;
-    background: rgb(255,64,129);
+    background: rgb($color-accent);
     animation: border-expand 0.2s cubic-bezier(0.4, 0, 0.4, 1) 0.01s alternate forwards;
     transition: all 1s cubic-bezier(0.4, 0, 1, 1); }
   .mdl-layout__tab .mdl-layout__tab-ripple-container {
@@ -7759,7 +7790,7 @@ input.mdl-button[type="submit"] {
     z-index: 1;
     overflow: hidden; }
     .mdl-layout__tab .mdl-layout__tab-ripple-container .mdl-ripple {
-      background-color: rgb(255,255,255); }
+      background-color: rgb($color-primary-contrast); }
 
 .mdl-layout__tab-panel {
   display: block; }
@@ -7997,7 +8028,7 @@ input.mdl-button[type="submit"] {
   border-radius: 50%;
   z-index: 2; }
   .mdl-radio.is-checked .mdl-radio__outer-circle {
-    border: 2px solid rgb(63,81,181); }
+    border: 2px solid rgb($color-primary); }
   .mdl-radio__outer-circle fieldset[disabled] .mdl-radio,
   .mdl-radio.is-disabled .mdl-radio__outer-circle {
     border: 2px solid rgba(0,0,0, 0.26);
@@ -8019,7 +8050,7 @@ input.mdl-button[type="submit"] {
   -ms-transform: scale(0, 0);
       transform: scale(0, 0);
   border-radius: 50%;
-  background: rgb(63,81,181); }
+  background: rgb($color-primary); }
   .mdl-radio.is-checked .mdl-radio__inner-circle {
     -ms-transform: scale(1, 1);
         transform: scale(1, 1); }
@@ -8050,7 +8081,7 @@ input.mdl-button[type="submit"] {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
   .mdl-radio__ripple-container .mdl-ripple {
-    background: rgb(63,81,181); }
+    background: rgb($color-primary); }
   fieldset[disabled] .mdl-radio .mdl-radio__ripple-container,
   .mdl-radio.is-disabled .mdl-radio__ripple-container {
     cursor: auto; }
@@ -8246,7 +8277,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
         user-select: none;
     outline: 0;
     padding: 0;
-    color: rgb(63,81,181);
+    color: rgb($color-primary);
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -8273,7 +8304,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       border: none; }
     .mdl-slider.is-upgraded::-ms-fill-lower {
       padding: 0;
-      background: linear-gradient(to right, transparent, transparent 16px, rgb(63,81,181) 16px, rgb(63,81,181) 0); }
+      background: linear-gradient(to right, transparent, transparent 16px, rgb($color-primary) 16px, rgb($color-primary) 0); }
     .mdl-slider.is-upgraded::-ms-fill-upper {
       padding: 0;
       background: linear-gradient(to left, transparent, transparent 16px, rgba(0,0,0, 0.26) 16px, rgba(0,0,0, 0.26) 0); }
@@ -8283,7 +8314,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       height: 12px;
       box-sizing: border-box;
       border-radius: 50%;
-      background: rgb(63,81,181);
+      background: rgb($color-primary);
       border: none;
       transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
     .mdl-slider.is-upgraded::-moz-range-thumb {
@@ -8293,35 +8324,35 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       box-sizing: border-box;
       border-radius: 50%;
       background-image: none;
-      background: rgb(63,81,181);
+      background: rgb($color-primary);
       border: none; }
     .mdl-slider.is-upgraded:focus:not(:active)::-webkit-slider-thumb {
-      box-shadow: 0 0 0 10px rgba(63,81,181, 0.26); }
+      box-shadow: 0 0 0 10px rgba($color-primary, 0.26); }
     .mdl-slider.is-upgraded:focus:not(:active)::-moz-range-thumb {
-      box-shadow: 0 0 0 10px rgba(63,81,181, 0.26); }
+      box-shadow: 0 0 0 10px rgba($color-primary, 0.26); }
     .mdl-slider.is-upgraded:active::-webkit-slider-thumb {
       background-image: none;
-      background: rgb(63,81,181);
+      background: rgb($color-primary);
       transform: scale(1.5); }
     .mdl-slider.is-upgraded:active::-moz-range-thumb {
       background-image: none;
-      background: rgb(63,81,181);
+      background: rgb($color-primary);
       transform: scale(1.5); }
     .mdl-slider.is-upgraded::-ms-thumb {
       width: 32px;
       height: 32px;
       border: none;
       border-radius: 50%;
-      background: rgb(63,81,181);
+      background: rgb($color-primary);
       -ms-transform: scale(0.375);
           transform: scale(0.375);
       transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
     .mdl-slider.is-upgraded:focus:not(:active)::-ms-thumb {
-      background: radial-gradient(circle closest-side, rgb(63,81,181) 0%, rgb(63,81,181) 37.5%, rgba(63,81,181, 0.26) 37.5%, rgba(63,81,181, 0.26) 100%);
+      background: radial-gradient(circle closest-side, rgb($color-primary) 0%, rgb($color-primary) 37.5%, rgba($color-primary, 0.26) 37.5%, rgba($color-primary, 0.26) 100%);
       -ms-transform: scale(1);
           transform: scale(1); }
     .mdl-slider.is-upgraded:active::-ms-thumb {
-      background: rgb(63,81,181);
+      background: rgb($color-primary);
       -ms-transform: scale(0.5625);
           transform: scale(0.5625); }
     .mdl-slider.is-upgraded.is-lowest-value::-webkit-slider-thumb {
@@ -8437,7 +8468,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       transform: translate(0, -1px); }
 
 .mdl-slider__background-lower {
-  background: rgb(63,81,181);
+  background: rgb($color-primary);
   -ms-flex: 0;
       flex: 0;
   position: relative;
@@ -8688,7 +8719,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   .mdl-snackbar__action {
     background: transparent;
     border: none;
-    color: rgb(255,64,129);
+    color: rgb($color-accent);
     float: right;
     text-transform: uppercase;
     padding: 14px 24px 14px 12px;
@@ -8905,28 +8936,28 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 .mdl-spinner__layer-1 {
   border-color: rgb(66,165,245); }
   .mdl-spinner--single-color .mdl-spinner__layer-1 {
-    border-color: rgb(63,81,181); }
+    border-color: rgb($color-primary); }
   .mdl-spinner.is-active .mdl-spinner__layer-1 {
     animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-1-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
 
 .mdl-spinner__layer-2 {
   border-color: rgb(244,67,54); }
   .mdl-spinner--single-color .mdl-spinner__layer-2 {
-    border-color: rgb(63,81,181); }
+    border-color: rgb($color-primary); }
   .mdl-spinner.is-active .mdl-spinner__layer-2 {
     animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-2-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
 
 .mdl-spinner__layer-3 {
   border-color: rgb(253,216,53); }
   .mdl-spinner--single-color .mdl-spinner__layer-3 {
-    border-color: rgb(63,81,181); }
+    border-color: rgb($color-primary); }
   .mdl-spinner.is-active .mdl-spinner__layer-3 {
     animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-3-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
 
 .mdl-spinner__layer-4 {
   border-color: rgb(76,175,80); }
   .mdl-spinner--single-color .mdl-spinner__layer-4 {
-    border-color: rgb(63,81,181); }
+    border-color: rgb($color-primary); }
   .mdl-spinner.is-active .mdl-spinner__layer-4 {
     animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-4-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
 
@@ -9317,7 +9348,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   border-radius: 14px;
   cursor: pointer; }
   .mdl-switch.is-checked .mdl-switch__track {
-    background: rgba(63,81,181, 0.5); }
+    background: rgba($color-primary, 0.5); }
   .mdl-switch__track fieldset[disabled] .mdl-switch,
   .mdl-switch.is-disabled .mdl-switch__track {
     background: rgba(0,0,0, 0.12);
@@ -9337,7 +9368,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: left; }
   .mdl-switch.is-checked .mdl-switch__thumb {
-    background: rgb(63,81,181);
+    background: rgb($color-primary);
     left: 16px;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12); }
   .mdl-switch__thumb fieldset[disabled] .mdl-switch,
@@ -9361,8 +9392,8 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     box-shadow: 0 0 0px 20px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.1); }
   .mdl-switch.is-focused.is-checked .mdl-switch__focus-helper {
-    box-shadow: 0 0 0px 20px rgba(63,81,181, 0.26);
-    background-color: rgba(63,81,181, 0.26); }
+    box-shadow: 0 0 0px 20px rgba($color-primary, 0.26);
+    background-color: rgba($color-primary, 0.26); }
 
 .mdl-switch__label {
   position: relative;
@@ -9392,7 +9423,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   transition-timing-function: step-end;
   transition-property: left; }
   .mdl-switch__ripple-container .mdl-ripple {
-    background: rgb(63,81,181); }
+    background: rgb($color-primary); }
   .mdl-switch__ripple-container fieldset[disabled] .mdl-switch,
   .mdl-switch.is-disabled .mdl-switch__ripple-container {
     cursor: auto; }
@@ -9616,7 +9647,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     bottom: 0px;
     left: 0px;
     position: absolute;
-    background: rgb(63,81,181);
+    background: rgb($color-primary);
     animation: border-expand 0.2s cubic-bezier(0.4, 0, 0.4, 1) 0.01s alternate forwards;
     transition: all 1s cubic-bezier(0.4, 0, 1, 1); }
   .mdl-tabs__tab .mdl-tabs__ripple-container {
@@ -9629,7 +9660,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     z-index: 1;
     overflow: hidden; }
     .mdl-tabs__tab .mdl-tabs__ripple-container .mdl-ripple {
-      background: rgb(63,81,181); }
+      background: rgb($color-primary); }
 
 .mdl-tabs__panel {
   display: block; }
@@ -9918,7 +9949,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   .mdl-textfield--floating-label.is-focused .mdl-textfield__label,
   .mdl-textfield--floating-label.is-dirty .mdl-textfield__label,
   .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
-    color: rgb(63,81,181);
+    color: rgb($color-primary);
     font-size: 12px;
     top: 4px;
     visibility: visible; }
@@ -9930,7 +9961,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     color: rgb(213,0,0);
     font-size: 12px; }
   .mdl-textfield__label:after {
-    background-color: rgb(63,81,181);
+    background-color: rgb($color-primary);
     bottom: 20px;
     content: '';
     height: 2px;
@@ -11124,85 +11155,61 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop {
       margin-left: 91.66667%; } }
 
-html, body {
-  margin: 0;
-  padding: 0; }
-
 body {
-  overflow: hidden;
-  font-size: 16px; }
+  margin: 0px; }
 
-.wrap {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background: #263238;
-  padding: 20px;
-  z-index: 1; }
+.styleguide-demo h1 {
+  margin: 48px 24px 0 24px; }
 
-main {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.wrap:after {
-  content: "";
-  position: absolute;
-  height: 100%;
+.styleguide-demo h1:after {
+  content: '';
+  display: block;
   width: 100%;
-  opacity: .2;
-  z-index: 0;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eceff1+0,263238+62,263238+62,263238+100 */
-  background: #eceff1;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #eceff1 0%, #263238 62%, #263238 62%, #263238 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceff1', endColorstr='#263238',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 24px; }
 
-.mdl-button--fab.mdl-button--colored {
-  background: #455a64;
-  color: white;
-  transition: all .2s ease;
-  -ms-transform: rotate(0deg);
-      transform: rotate(0deg); }
+.styleguide-demo {
+  opacity: 0;
+  transition: opacity 0.6s ease; }
 
-.mdl-button--fab.mdl-button--colored:hover {
-  background: white;
-  color: #455a64;
-  transition: all .2s ease;
-  -ms-transform: rotate(45deg);
-      transform: rotate(45deg); }
+.styleguide-masthead {
+  height: 256px;
+  background: rgb(33,33,33);
+  padding: 115px 16px 0; }
 
-.mdl-button {
-  -ms-transform: rotate(10deg);
-      transform: rotate(10deg); }
-
-.btn-wrap {
+.styleguide-container {
   position: relative;
-  /*left: calc(100% - 100px);*/
-  text-align: right;
-  z-index: 999; }
+  max-width: 960px;
+  width: 100%; }
 
-.btn-wrap span {
-  color: white;
-  letter-spacing: .2em;
-  font-size: .6em;
-  font-weight: lighter; }
+.styleguide-title {
+  color: #fff;
+  bottom: auto;
+  position: relative;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.02em; }
+  .styleguide-title:after {
+    border-bottom: 0px; }
+  .styleguide-title span {
+    font-weight: 300; }
 
-.btn-portfolio {
-  top: calc(100% - 100px);
-  right: 0; }
+.mdl-styleguide .mdl-layout__drawer .mdl-navigation__link {
+  padding: 10px 24px; }
 
-#portfolio-icon:hover > #trending-flat {
-  -ms-transform: translateX(10px);
-      transform: translateX(10px); }
+.demosLoaded .styleguide-demo {
+  opacity: 1; }
 
-.btn-portfolio .fab .mdl-button--colored:hover {
-  -ms-transform: rotate(0);
-      transform: rotate(0); }
+iframe {
+  display: block;
+  width: 100%;
+  border: none; }
+
+iframe.heightSet {
+  overflow: hidden; }
+
+.demo-wrapper {
+  margin: 24px; }
+  .demo-wrapper iframe {
+    border: 1px solid rgba(0, 0, 0, 0.5); }

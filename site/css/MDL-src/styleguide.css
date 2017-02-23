@@ -14,6 +14,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 /* Material Design Lite */
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -11124,85 +11139,61 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop {
       margin-left: 91.66667%; } }
 
-html, body {
-  margin: 0;
-  padding: 0; }
-
 body {
-  overflow: hidden;
-  font-size: 16px; }
+  margin: 0px; }
 
-.wrap {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background: #263238;
-  padding: 20px;
-  z-index: 1; }
+.styleguide-demo h1 {
+  margin: 48px 24px 0 24px; }
 
-main {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.wrap:after {
-  content: "";
-  position: absolute;
-  height: 100%;
+.styleguide-demo h1:after {
+  content: '';
+  display: block;
   width: 100%;
-  opacity: .2;
-  z-index: 0;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eceff1+0,263238+62,263238+62,263238+100 */
-  background: #eceff1;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #eceff1 0%, #263238 62%, #263238 62%, #263238 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceff1', endColorstr='#263238',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 24px; }
 
-.mdl-button--fab.mdl-button--colored {
-  background: #455a64;
-  color: white;
-  transition: all .2s ease;
-  -ms-transform: rotate(0deg);
-      transform: rotate(0deg); }
+.styleguide-demo {
+  opacity: 0;
+  transition: opacity 0.6s ease; }
 
-.mdl-button--fab.mdl-button--colored:hover {
-  background: white;
-  color: #455a64;
-  transition: all .2s ease;
-  -ms-transform: rotate(45deg);
-      transform: rotate(45deg); }
+.styleguide-masthead {
+  height: 256px;
+  background: rgb(33,33,33);
+  padding: 115px 16px 0; }
 
-.mdl-button {
-  -ms-transform: rotate(10deg);
-      transform: rotate(10deg); }
-
-.btn-wrap {
+.styleguide-container {
   position: relative;
-  /*left: calc(100% - 100px);*/
-  text-align: right;
-  z-index: 999; }
+  max-width: 960px;
+  width: 100%; }
 
-.btn-wrap span {
-  color: white;
-  letter-spacing: .2em;
-  font-size: .6em;
-  font-weight: lighter; }
+.styleguide-title {
+  color: #fff;
+  bottom: auto;
+  position: relative;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.02em; }
+  .styleguide-title:after {
+    border-bottom: 0px; }
+  .styleguide-title span {
+    font-weight: 300; }
 
-.btn-portfolio {
-  top: calc(100% - 100px);
-  right: 0; }
+.mdl-styleguide .mdl-layout__drawer .mdl-navigation__link {
+  padding: 10px 24px; }
 
-#portfolio-icon:hover > #trending-flat {
-  -ms-transform: translateX(10px);
-      transform: translateX(10px); }
+.demosLoaded .styleguide-demo {
+  opacity: 1; }
 
-.btn-portfolio .fab .mdl-button--colored:hover {
-  -ms-transform: rotate(0);
-      transform: rotate(0); }
+iframe {
+  display: block;
+  width: 100%;
+  border: none; }
+
+iframe.heightSet {
+  overflow: hidden; }
+
+.demo-wrapper {
+  margin: 24px; }
+  .demo-wrapper iframe {
+    border: 1px solid rgba(0, 0, 0, 0.5); }
