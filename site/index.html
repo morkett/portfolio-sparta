@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
 
     <!--build:css css/styles.min.css-->
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
@@ -15,62 +18,101 @@
     <title>My CV</title>
   </head>
   <body>
-    <div class=" mdl-grid">
-      <div class="mdl-cell mdl-cell--12-col wrap">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer" id="mdl-wrap">
+  0
 
 
-      <!-- Colored FAB button with ripple -->
-      <div class="btn-wrap">
-        <span>menu</span>
-        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-          <i class="material-icons">add</i>
-        </button>
-      </div>
-        <div class="btn-wrap btn-portfolio">
-          <span>portfolio</span>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" id="portfolio-icon">
-            <i class="material-icons" id="trending-flat">trending_flat</i>
-          </button>
-      </div>
-
-      <main></main>
-      <!-- <nav>
-        <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#personal">personal</a></li>
-          <li><a href="#profile">profile</a></li>
-          <li><a href="#work">work history</a></li>
-          <li><a href="#skills">skills</a></li>
-          <li><a href="#edu">education</a></li>
-          <li><a href="#hobbies">hobbies</a></li>
-
-        </ul>
-      </nav>
-      <h1>My CV</h1>
-      <section id="personal">
-      <h2>Personal Details</h2>
-        <h4>David Corkett</h4>
-        <p>11/05/89</p>
-        <div>
-          <p>11 Example Street</p>
-          <p>London</p>
-          <p>HA9 8TH</p>
+    <div class="hero-img">
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">David corkett</h2>
         </div>
-        <p>0775 5555 555</p>
-        <a href="mailto:someone@example.com?h4=Hello%20again">someone@example.com</a>
-      </section>
+        <div class="mdl-card__supporting-text">
+          Front End Web Developer
+        </div>
+      </div>
+    </div>
 
-    <section id="profile">
-      <h2>profile</h2>
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect" id="tabs-min-height">
+  <div class="mdl-tabs__tab-bar">
+      <a href="#projects-panel" class="mdl-tabs__tab" id="js-projects-panel">projects</a>
+      <a href="#profile-panel" class="mdl-tabs__tab" id="js-profile-panel">profile</a>
+      <a href="#cv-panel" class="mdl-tabs__tab" id="js-cv-panel">cv</a>
+  </div>
 
-      <p>I am a self-taught front-end web developer from London.
-      I have experience of creating responsive interactive websites by hand- coding HTML, CSS, and jQuery.
-      I am passionate about design and alongside my technical ability, I can create innovative interfaces which allow ease of usability.
-       I follow many online blogs and front-end news sites to keep updated with current standards and new developments in an ever-changing field.
-       Teaching myself to code while working full-time has required me to be proactive, a fast learner, and efficient in my methods of execution.
-     </p>
-   </section>
+    <div class="mdl-tabs__panel is-active" id="projects-panel">
+    <ul>
+      <li>
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Beating Heart</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            LOW-POLY • SVG • ANIMATION
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Real-Time Clock</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            REALTIME CLOCK • JS • ANIMATION
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Down to earth</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            RESPONSIVE • WEBSITE
+          </div>
+        </div>
+      </li>
 
+    </ul>
+  </div>
+  <div class="mdl-tabs__panel" id="profile-panel">
+    <ul>
+      <li>
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">placeholder for img</h2>
+          </div>
+        </div>
+      </li>
+      <li>
+
+          <h3>I AM A SELF-TAUGHT
+FRONT-END WEB DEVELOPER
+FROM LONDON</h3>
+
+<p>I HAVE EXPERIENCE OF CREATING RESPONSIVE INTERACTIVE WEBSITES BY HAND-CODING HTML, CSS, AND JQUERY. I AM PASSIONATE ABOUT DESIGN AND ALONGSIDE MY TECHNICAL ABILITY, I CAN CREATE INNOVATIVE INTERFACES WHICH ALLOW EASE OF USABILITY. I FOLLOW MANY ONLINE BLOGS AND FRONT-END NEWS SITES TO KEEP UPDATED WITH CURRENT STANDARDS AND NEW DEVELOPMENTS IN AN EVER-CHANGING FIELD. TEACHING MYSELF TO CODE WHILE WORKING FULL-TIME HAS REQUIRED ME TO BE PROACTIVE, A FAST LEARNER, AND EFFICIENT IN MY METHODS OF EXECUTION.</p>
+      </li>
+      <li class="design">
+        <h4 >design</h4>
+          <ul>
+            <li class="skill-icon">PS</li>
+            <li class="skill-icon">AI</li>
+          </ul>
+      </li>
+      <li class="develop">
+        <h4 >development</h4>
+          <ul>
+            <li class="skill-icon">CSS3</li>
+            <li class="skill-icon">HTML5</li>
+            <li class="skill-icon">JS</li>
+            <li class="skill-icon"><span>j</span>QUERY</li>
+            <li class="skill-icon">SCSS</li>
+            <li class="skill-icon">GIT</li>
+          </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="mdl-tabs__panel" id="cv-panel">
     <section id="work">
    <div>
      <h2>work history</h2>
@@ -145,18 +187,7 @@
   </section>
 
 
-    <section id="skills">
-      <h2>skills</h2>
 
-      <div>
-        <h3>development skills</h3>
-        HTML, jQuery, Javascript, SCSS, CSS, SVG, Css Animations, Version Control
-      </div>
-      <div>
-        <h3>design skills</h3>
-        photoshop, illustrator
-      </div>
-    </section>
 
     <section id="edu">
       <h3>education</h3>
@@ -165,7 +196,6 @@
         <h4>London School of photography</h4>
         <p>2014-2015</p>
       </li>
-
       <li>
         <h4>University of Portsmouth</h4>
         <p>2008- 2011</p>
@@ -175,26 +205,25 @@
           <p>2:2</p>
         </li>
       </ul>
-    </li>
-
-    <li>
-      <h4>Claremont High School and Sixth Form</h4>
-      <p>2000-2008</p>
-      <ul>
-        <li>
-        <h5>History</h5>
-        <p>B</p>
-       </li>
-        <li>
-        <h5>Geography</h5>
-        <p>C</p>
-       </li>
-        <li>
-        <h5>Philosphy and Ethics</h5>
-        <p>C</p>
       </li>
-        </ul>
-      </li>
+      <li>
+        <h4>Claremont High School and Sixth Form</h4>
+        <p>2000-2008</p>
+        <ul>
+          <li>
+          <h5>History</h5>
+          <p>B</p>
+         </li>
+          <li>
+          <h5>Geography</h5>
+          <p>C</p>
+         </li>
+          <li>
+          <h5>Philosphy and Ethics</h5>
+          <p>C</p>
+        </li>
+          </ul>
+        </li>
     </ul>
   </section>
 
@@ -204,13 +233,35 @@
       <li>photography</li>
       <li>martial arts</li>
     </ul>
-
-  </section> -->
+  </section>
   </div>
 </div>
+
+</div> <!--closing-container-->
+
+
+
+
+      <!-- <section id="personal">
+      <h2>Personal Details</h2>
+        <h4>David Corkett</h4>
+        <p>11/05/89</p>
+        <div>
+          <p>11 Example Street</p>
+          <p>London</p>
+          <p>HA9 8TH</p>
+        </div>
+        <p>0775 5555 555</p>
+        <a href="mailto:someone@example.com?h4=Hello%20again">someone@example.com</a>
+      </section> -->
+
+
+
+
 
 <!-- build:js js/external.min.js-->
 <script src="js/external.js"></script>
 <!-- endbuild -->
+
 </body>
 </html>

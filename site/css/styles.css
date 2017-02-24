@@ -11124,22 +11124,142 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop {
       margin-left: 91.66667%; } }
 
-html, body {
-  margin: 0;
-  padding: 0; }
+* {
+  box-sizing: border-box; }
 
 body {
-  overflow: hidden;
-  font-size: 16px; }
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  padding: 0;
+  margin: 0; }
 
-.wrap {
+#mdl-wrap {
   position: relative;
-  height: 100vh;
-  background: #263238;
-  padding: 20px;
+  height: auto; }
+
+header {
+  border: 1px solid #C62828;
+  height: 80px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+header h2 {
+  position: relative;
+  font-size: .8em;
+  font-weight: 400;
+  width: 40%;
+  border: 1px solid #29B6F6;
+  text-align: center;
+  line-height: 1.1;
+  padding: 60% 0; }
+
+.mdl-tabs__tab-bar {
+  background: white; }
+
+.mdl-layout__drawer-button {
+  position: fixed; }
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  background: #263238; }
+
+.mdl-tabs__panel ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 0;
+  padding-top: 20px;
+  min-height: 100vh; }
+  .mdl-tabs__panel ul li {
+    list-style: none;
+    width: 90%;
+    margin-bottom: 2%; }
+
+.mdl-tabs__panel .demo-card-wide {
+  width: 100%;
+  background-color: rgba(227, 227, 227, 0.1); }
+
+.mdl-tabs__panel .mdl-card__title-text {
+  font-size: .8em; }
+
+.mdl-tabs__panel .mdl-card__supporting-text {
+  font-size: .7em; }
+
+#tabs-min-height {
+  min-height: 90vh; }
+
+#profile-panel h4 {
+  text-align: center; }
+
+#profile-panel .design ul, #profile-panel .develop ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+#profile-panel .skill-icon {
+  height: 80px;
+  width: 80px;
+  border: 1px solid #263238;
+  margin: 10px 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 1.2em; }
+  #profile-panel .skill-icon span {
+    text-transform: lowercase; }
+
+#profile-panel .develop ul .skill-icon {
+  font-size: 1.2em;
+  font-weight: 400; }
+
+.hero-img {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 47px);
+  background-color: white;
+  background: url("../images/hero.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   z-index: 1; }
 
-main {
+.hero-img:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: .4;
+  z-index: 2; }
+
+.demo-card-wide {
+  width: 90%;
+  text-align: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -11147,61 +11267,38 @@ main {
   -ms-flex-align: center;
       align-items: center; }
 
-.wrap:after {
-  content: "";
-  position: absolute;
-  height: 100%;
+.mdl-card__title-text {
+  text-align: center; }
+
+.hero-inner {
+  width: 90%;
+  padding: 50px 25px;
+  outline-offset: 6px;
+  background-color: white;
+  outline-style: double;
+  outline-width: 6px;
+  outline-color: white;
+  z-index: 3;
+  text-align: center; }
+  .hero-inner h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    line-height: 1em; }
+  .hero-inner h2 {
+    font-size: 0.65em;
+    margin-top: 5px;
+    letter-spacing: 0.3em;
+    line-height: 0; }
+
+.mdl-tabs__tab .mdl-tabs__ripple-container .mdl-ripple {
+  background: #263238; }
+
+.js-scroll-fix {
+  position: fixed;
   width: 100%;
-  opacity: .2;
-  z-index: 0;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eceff1+0,263238+62,263238+62,263238+100 */
-  background: #eceff1;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #eceff1 0%, #263238 62%, #263238 62%, #263238 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceff1', endColorstr='#263238',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
-
-.mdl-button--fab.mdl-button--colored {
-  background: #455a64;
-  color: white;
-  transition: all .2s ease;
-  -ms-transform: rotate(0deg);
-      transform: rotate(0deg); }
-
-.mdl-button--fab.mdl-button--colored:hover {
-  background: white;
-  color: #455a64;
-  transition: all .2s ease;
-  -ms-transform: rotate(45deg);
-      transform: rotate(45deg); }
-
-.mdl-button {
-  -ms-transform: rotate(10deg);
-      transform: rotate(10deg); }
-
-.btn-wrap {
-  position: relative;
-  /*left: calc(100% - 100px);*/
-  text-align: right;
+  top: 0;
   z-index: 999; }
 
-.btn-wrap span {
-  color: white;
-  letter-spacing: .2em;
-  font-size: .6em;
-  font-weight: lighter; }
-
-.btn-portfolio {
-  top: calc(100% - 100px);
-  right: 0; }
-
-#portfolio-icon:hover > #trending-flat {
-  -ms-transform: translateX(10px);
-      transform: translateX(10px); }
-
-.btn-portfolio .fab .mdl-button--colored:hover {
-  -ms-transform: rotate(0);
-      transform: rotate(0); }
+.js-scroll-padding {
+  margin-top: 58px; }

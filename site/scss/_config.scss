@@ -1,0 +1,18 @@
+
+$border-green: 1px solid #43A047;
+$border-blue: 1px solid #29B6F6;
+$border-red: 1px solid #C62828;
+
+// fonts
+$font-main: 'Source Sans Pro', sans-serif;
+
+
+
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(38, 50, 56);
+$color-grey: rgba(227, 227, 227, .1);;
+
+@mixin opacity($color, $opacity: .3) {
+    outline-color: rgb(38, 50, 56); /* The Fallback */
+    outline-color: rgba(38, 50, 56, $opacity);
+}
