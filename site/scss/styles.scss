@@ -14,7 +14,6 @@ body {
   padding: 0;
   margin: 0;
 
-
 }
 
 #mdl-wrap {
@@ -62,6 +61,10 @@ header {
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
       background: $color-black;
 }
+
+#projects-panel ul {
+  min-height: 100vh;
+}
 .mdl-tabs__panel ul {
   display: flex;
   justify-content: center;
@@ -69,7 +72,7 @@ header {
   flex-direction: column;
   padding: 0;
   padding-top: 20px;
-  min-height: 100vh;
+  // min-height: 100vh;
 
   li {
     list-style: none;
@@ -213,4 +216,8 @@ z-index: 999;
 
 .js-scroll-padding{
   margin-top: 58px;
+}
+
+.js-body-overflow {
+  overflow: visible;
 }

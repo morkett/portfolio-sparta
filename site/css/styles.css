@@ -11168,6 +11168,9 @@ header h2 {
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
   background: #263238; }
 
+#projects-panel ul {
+  min-height: 100vh; }
+
 .mdl-tabs__panel ul {
   display: -ms-flexbox;
   display: flex;
@@ -11178,8 +11181,7 @@ header h2 {
   -ms-flex-direction: column;
       flex-direction: column;
   padding: 0;
-  padding-top: 20px;
-  min-height: 100vh; }
+  padding-top: 20px; }
   .mdl-tabs__panel ul li {
     list-style: none;
     width: 90%;
@@ -11302,3 +11304,6 @@ header h2 {
 
 .js-scroll-padding {
   margin-top: 58px; }
+
+.js-body-overflow {
+  overflow: visible; }
