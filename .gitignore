@@ -59,6 +59,7 @@ Thumbs.db
 # Ignore CSS & Map File
 *.css
 *.map
+/css
 
 # Ignore the Node Modules folder
 /node_modules

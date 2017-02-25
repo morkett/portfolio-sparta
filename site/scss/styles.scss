@@ -125,9 +125,10 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
-
+    background: $color-grey;
     span {
       text-transform: lowercase;
+
     }
   }
 
@@ -222,6 +223,26 @@ h4 {
   background: transparent;
 }
 
+//cv footer
+
+.mdl-mega-footer {
+  background-color: transparent;
+  .mdl-mega-footer__link-list {
+    span {
+      font-size: .6em;
+      display: block;
+    }
+  }
+}
+
+.mdl-mega-footer--heading, .mdl-mega-footer__heading, .mdl-mega-footer__link-list {
+  color: $color-black;
+}
+
+.mdl-mega-footer__heading-checkbox:checked> .mdl-mega-footer__heading {
+  display: none;
+}
+
 
 
 
@@ -237,7 +258,7 @@ z-index: 999;
 }
 
 .js-scroll-padding-cv {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .js-body-overflow {
