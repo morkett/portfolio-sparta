@@ -67,7 +67,7 @@ header {
 }
 .mdl-tabs__panel ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   padding: 0;
@@ -85,6 +85,7 @@ header {
     .demo-card-wide {
       width: 100%;
       background-color: $color-grey;
+      cursor: pointer;
     }
   .mdl-card__title-text {
     font-size: .8em;
@@ -102,12 +103,18 @@ header {
   h4 {
     text-align: center;
   }
+
   .design ul, .develop ul{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0;
+
+    li p {
+      padding-top: 20px;
+    }
   }
   .skill-icon {
     height: 80px;
@@ -198,10 +205,21 @@ header {
   }
 }
 
+h3 {
+  font-weight: 200;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+h4 {
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
 //rippler color change MDL
 
 .mdl-tabs__tab .mdl-tabs__ripple-container .mdl-ripple {
-  background: $color-black;
+  background: transparent;
 }
 
 
@@ -216,6 +234,10 @@ z-index: 999;
 
 .js-scroll-padding{
   margin-top: 58px;
+}
+
+.js-scroll-padding-cv {
+  margin-top: 70px;
 }
 
 .js-body-overflow {

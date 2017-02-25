@@ -11174,8 +11174,8 @@ header h2 {
 .mdl-tabs__panel ul {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-direction: column;
@@ -11189,7 +11189,8 @@ header h2 {
 
 .mdl-tabs__panel .demo-card-wide {
   width: 100%;
-  background-color: rgba(227, 227, 227, 0.1); }
+  background-color: rgba(227, 227, 227, 0.1);
+  cursor: pointer; }
 
 .mdl-tabs__panel .mdl-card__title-text {
   font-size: .8em; }
@@ -11213,7 +11214,10 @@ header h2 {
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  padding: 0; }
+  #profile-panel .design ul li p, #profile-panel .develop ul li p {
+    padding-top: 20px; }
 
 #profile-panel .skill-icon {
   height: 80px;
@@ -11293,8 +11297,17 @@ header h2 {
     letter-spacing: 0.3em;
     line-height: 0; }
 
+h3 {
+  font-weight: 200;
+  font-size: 1.6em;
+  text-align: center; }
+
+h4 {
+  font-weight: 200;
+  font-size: 1.5em; }
+
 .mdl-tabs__tab .mdl-tabs__ripple-container .mdl-ripple {
-  background: #263238; }
+  background: transparent; }
 
 .js-scroll-fix {
   position: fixed;
@@ -11304,6 +11317,9 @@ header h2 {
 
 .js-scroll-padding {
   margin-top: 58px; }
+
+.js-scroll-padding-cv {
+  margin-top: 70px; }
 
 .js-body-overflow {
   overflow: visible; }
