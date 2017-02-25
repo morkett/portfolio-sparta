@@ -96,7 +96,7 @@ header {
 }
 
 #tabs-min-height {
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 #profile-panel {
@@ -245,6 +245,36 @@ h4 {
 
 
 
+.education-ul, .freelance-ul,
+.work-xp-ul {
+  text-align: center;
+
+  li {
+    border-bottom: 1px solid rgba(38, 50, 56, .3);
+  }
+
+  .a-levels li {
+    border-bottom: none;
+  }
+}
+
+
+.mdl-tabs__panel .list-style-dot {
+  list-style: lower-roman;
+  border-bottom: none;
+}
+
+.mdl-tabs__panel ul li p {
+  text-align: center;
+}
+
+.underline-li {
+    border-bottom: 1px solid $color-black;
+}
+
+.hobbies li {
+  text-align: center;
+}
 
 .js-scroll-fix {
 position: fixed;
@@ -264,3 +294,5 @@ z-index: 999;
 .js-body-overflow {
   overflow: visible;
 }
+
+@import "media-queries";

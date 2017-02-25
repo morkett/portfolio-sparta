@@ -1,13 +1,14 @@
 $(document).ready(function() {
-//   $(".js-panel-click").click(function(){
+//   $("#projects-panel").click(function(){
 //     event.preventDefault();
 //     $("body").addClass("js-body-overflow");
-//                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+//                $('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 700);
 //            setTimeout(function () {
 //              $(".js-panel-click").removeClass("js-panel-click");
 //            }, 10);
 //
 // });
+
 
 
 
